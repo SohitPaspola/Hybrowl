@@ -1,0 +1,34 @@
+.main {
+  /* border: 2px solid blue; */
+  background-color: #ddf1f1;
+  border-radius: 10px;
+  width: 70%;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+button{
+  height: 2.5rem;
+  padding: .5rem;
+  font-size: 1.2rem;
+  background-color: #3aa39f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover,
+button:active{
+  background-color: #284645;
+}
+
+.main h2{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.main p{
+  color: red;
+  font-weight: 700;
+}
