@@ -1,0 +1,21 @@
+Q1 => Given any string, find the number of characters of the same letter. The Sequence of the output
+of counts should be in order in which the letters come in the word. Ignore whitespaces.
+
+
+function count(str) {
+  const length = str.length;
+  let strObj = {};
+
+  for (let i = 0; i < length; i++) {
+    let getChar = str.charAt(i);
+    let count = strObj[getChar];
+    strObj[getChar] = count ? count + 1 : 1;
+  }
+  for (getChar in strObj) {
+    if (getChar !== " ") {
+      console.log(getChar + "-" + strObj[getChar]);
+    }
+  }
+}
+
+count("Amolya Sharma".toLowerCase());
